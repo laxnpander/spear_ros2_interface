@@ -18,10 +18,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CovisibilityGraph.msg"
   "msg/GraphMaintenance.msg"
-  "srv/Trigger.srv"
-  "srv/Command.srv"
-  "srv/SetConfig.srv"
-  "srv/StartPublisher.srv"
+  "msg/DenseFlow.msg"
   DEPENDENCIES std_msgs
  )
 
