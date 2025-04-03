@@ -12,6 +12,7 @@ find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 
@@ -19,7 +20,12 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CovisibilityGraph.msg"
   "msg/GraphMaintenance.msg"
   "msg/DenseFlow.msg"
-  DEPENDENCIES std_msgs
+  "msg/SessionStatus.msg"
+  "msg/Pinhole.msg"
+  "msg/Point2.msg"
+  "msg/FullFrame.msg"
+  "msg/GlobalDescriptor.msg"
+  DEPENDENCIES std_msgs geometry_msgs
  )
 
 if(BUILD_TESTING)
