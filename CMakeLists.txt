@@ -25,6 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Point2.msg"
   "msg/FullFrame.msg"
   "msg/GlobalDescriptor.msg"
+  "srv/SetOutputScope.srv"
   DEPENDENCIES std_msgs geometry_msgs
  )
 
