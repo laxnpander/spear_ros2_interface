@@ -1,0 +1,4 @@
+string scope_uid
+---
+bool success
+string message

@@ -26,6 +26,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/FullFrame.msg"
   "msg/GlobalDescriptor.msg"
   "srv/SetOutputScope.srv"
+  "srv/DeleteScope.srv"
   DEPENDENCIES std_msgs geometry_msgs
  )
 
